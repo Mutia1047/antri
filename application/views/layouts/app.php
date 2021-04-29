@@ -37,7 +37,7 @@ if ($this->session->userdata('level') == 'Penjaga') {
       <div class="navbar-header">
         <img src="<?php echo base_url('media/' . $instansi->logo); ?>" width="42px" height="50px" class="img " onclick="window.location='<?php echo site_url($site); ?>'">
       </div>
-      <a class="navbar-brand">BPKAD Way Kanan</a>
+      <a class="navbar-brand"><?php echo $instansi->instansi; ?></a>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav"><br>
@@ -48,28 +48,41 @@ if ($this->session->userdata('level') == 'Penjaga') {
         <ul class="nav navbar-nav navbar-right navbar-user">
           <li class="dropdown messages-dropdown">
             <p class="navbar-brand">
-              Sistem Informasi Antrian Ruang Pelayanan Terpadu
+              Sistem Informasi Antrian <?php echo $instansi->instansi; ?>
             </p>
           </li>
           <li class="dropdown user-dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Hai, <?php echo $this->session->userdata('nama') ?></a>
           </li>
         </ul>
-        
+
       </div><!-- /.navbar-collapse -->
+
     </nav>
 
     <div id="page-wrapper">
+
       <?php $this->load->view($content); ?>
+
     </div><!-- /#page-wrapper -->
 
-  </div><!-- /#wrapper -->
-  
+  </div>
+
+  <!-- /#wrapper -->
+
 
   <!-- JavaScript -->
   <script src="<?php echo base_url('assets/js/jquery-1.10.2.js'); ?>"></script>
+
   <script src="<?php echo base_url('assets/js/bootstrap.js'); ?>"></script>
 
 </body>
+<footer class="footer">
+  <div class="container">
+
+    <p style="text-align:center;" class="text-muted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © <?php echo $instansi->instansi; ?></p>
+
+  </div>
+</footer>
 
 </html>

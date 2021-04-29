@@ -38,7 +38,7 @@
                             <div class="col-lg-12">
                                 <div class="p-3">
                                     <div class="text-center">
-                                        <h1 class="h3 text-gray-900 mb-2"><strong>Sistem Informasi Antrian BPKAD Way Kanan</h1>
+                                        <h1 class="h3 text-gray-900 mb-2"><strong>Sistem Informasi Antrian <?php echo $instansi->instansi; ?></h1>
                                     </div>
                                     <div class="text-center mb-3">
                                         <div id="logo">

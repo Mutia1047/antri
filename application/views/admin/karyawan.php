@@ -52,7 +52,7 @@
 										</div>
 										<div class="modal-body">
 											<form method="POST" action="<?php echo site_url('admin/edit_karyawan/'); ?>" enctype="multipart/form-data">
-												<div class="col-md-6">
+												<div class="col-md-12">
 													<label for="sel1">Username</label>
 													<input type="text" name="username" class="form-control" pattern="[0-9A-Za-z .,-]{0,50}" value="<?php echo $row->username; ?>" readonly>
 													<label for="sel1">Nama</label>
@@ -62,7 +62,7 @@
 													<label for="sel1">Alamat</label>
 													<textarea name="alamat" class="form-control"><?php echo $row->alamat; ?></textarea>
 												</div>
-												<div class="col-md-6">
+												<div class="col-md-12">
 													<label for="sel1">Level</label>
 													<?php
 													if ($row->level == 'Admin') {
@@ -110,7 +110,7 @@
 											</form>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
 										</div>
 									</div>
 								</div>

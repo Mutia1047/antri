@@ -44,13 +44,13 @@
 											</div>
 											<div class="modal-body">
 												<form method="POST" action="<?php echo site_url('admin/edit_instansi/' . $row->id_instansi); ?>" enctype="multipart/form-data">
-													<div class="col-md-6">
+													<div class="col-md-12">
 														<label for="sel1">Nama Instansi</label>
 														<input type="text" name="instansi" class="form-control" pattern="[0-9A-Za-z .,-]{0,50}" value="<?php echo $row->instansi; ?>" required="" maxlength="50">
 														<label for="sel1">Alamat</label>
 														<textarea name="alamat" class="form-control"><?php echo $row->alamat; ?></textarea>
 													</div>
-													<div class="col-md-6">
+													<div class="col-md-12">
 														<label for="sel1">Nomer Telp</label>
 														<input type="text" name="telp" class="form-control" pattern="[0-9A-Za-z .,-]{0,50}" value="<?php echo $row->telp; ?>" required="" maxlength="50">
 														<label for="sel1">Logo</label>
@@ -68,7 +68,7 @@
 												</form>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
 											</div>
 										</div>
 									</div>
