@@ -45,7 +45,7 @@
 									<div class="modal-content">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Tambah Agenda</h4>
+											<h4 class="modal-title">Edit Agenda</h4>
 										</div>
 										<div class="modal-body">
 											<form method="POST" action="<?php echo site_url('admin/edit_agenda/'); ?>" enctype="multipart/form-data">
