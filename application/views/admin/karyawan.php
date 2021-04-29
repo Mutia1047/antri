@@ -22,6 +22,7 @@
 						<tr>
 							<th>No</thwidth=>
 							<th>Nama Karyawan</th>
+							<th>Level</th>
 							<th>Telp</th>
 							<th>Alamat</th>
 							<th>username</th>
@@ -35,6 +36,7 @@
 							<tr style="text-align:center;">
 								<td><?php echo $no; ?></td>
 								<td><?php echo $row->nama; ?></td>
+								<td><?php echo $row->level; ?></td>
 								<td><?php echo $row->telp; ?></td>
 								<td><?php echo $row->alamat; ?></td>
 								<td><?php echo $row->username; ?></td>
